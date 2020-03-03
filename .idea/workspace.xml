@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dab72def-fcbf-4652-901f-05cbcda3febb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1YaTpzt429KZFlxrd9xhF64KwwM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Labs/lab06" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RunManager" selected="Application.Question_1">
+    <configuration name="Question_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="questions.Question_1" />
+      <module name="csci2020u_assignment_1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="questions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Question_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="questions.Question_2" />
+      <module name="csci2020u_assignment_1" />
+      <option name="VM_PARAMETERS" value="--module-path /dev/javafx-sdk-13.0.2/lib --add-modules javafx.controls,javafx.fxml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="questions.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Question_1" />
+      <item itemvalue="Application.Question_2" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Question_1" />
+        <item itemvalue="Application.Question_2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dab72def-fcbf-4652-901f-05cbcda3febb" name="Default Changelist" comment="" />
+      <created>1583179891123</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583179891123</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1032" y="183" key="#Notifications" timestamp="1583204282136">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1032" y="183" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1583204282136" />
+    <state x="361" y="72" key="#Project_Structure" timestamp="1583180055720">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="72" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1583180055720" />
+    <state x="338" y="61" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1583191508290">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="270" y="48" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1583181255128" />
+    <state x="338" y="61" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1583191508290" />
+    <state x="958" y="126" key="#com.intellij.ide.util.MemberChooser" timestamp="1583184268848">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="958" y="126" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1583184268848" />
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1583184688423">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1583184688423" />
+    <state width="914" height="210" key="GridCell.Tab.0.bottom" timestamp="1583205549998">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1583183592034" />
+    <state width="914" height="210" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1583205549998" />
+    <state width="914" height="210" key="GridCell.Tab.0.center" timestamp="1583205549997">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1583183592034" />
+    <state width="914" height="210" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1583205549997" />
+    <state width="914" height="210" key="GridCell.Tab.0.left" timestamp="1583205549997">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1583183592034" />
+    <state width="914" height="210" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1583205549997" />
+    <state width="914" height="210" key="GridCell.Tab.0.right" timestamp="1583205549997">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1583183592034" />
+    <state width="914" height="210" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1583205549997" />
+    <state x="311" y="0" key="SettingsEditor" timestamp="1583204291310">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1583180045644" />
+    <state x="311" y="0" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1583204291310" />
+  </component>
+</project>
