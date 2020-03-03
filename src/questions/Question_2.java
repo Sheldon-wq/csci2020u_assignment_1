@@ -18,6 +18,7 @@ import java.text.DecimalFormat;
 public class Question_2 extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
+        //Panes
         GridPane compPane = new GridPane();
         compPane.setPadding(new Insets(10,10,10,10));
 
@@ -26,7 +27,7 @@ public class Question_2 extends Application {
         buttonPane.setAlignment(Pos.CENTER_RIGHT);
 
         VBox pane = new VBox();
-        pane.setPrefWidth(278);
+        pane.setPrefWidth(277);
 
         //Labels
         Label investmentAmount = new Label("Investment Amount");
