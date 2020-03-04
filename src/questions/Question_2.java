@@ -11,7 +11,6 @@ import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
@@ -79,6 +78,7 @@ public class Question_2 extends Application {
         Scene scene = new Scene(pane);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Question_2");
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 

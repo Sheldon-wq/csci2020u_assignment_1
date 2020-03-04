@@ -7,8 +7,6 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-import java.util.Arrays;
-
 public class Question_1 extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
@@ -43,10 +41,9 @@ public class Question_1 extends Application {
         Scene scene = new Scene(pane);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Question_1");
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 
-    public static void main(String[] args) {
-        launch(args);
-    }
+    public static void main(String[] args) { launch(args); }
 }

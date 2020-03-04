@@ -3,17 +3,13 @@ package questions;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.canvas.Canvas;
-import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Label;
-import javafx.scene.layout.FlowPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 import javafx.stage.Stage;
 
 public class Question_3 extends Application {
-
     @Override
     public void start(Stage primaryStage) throws Exception {
         //3 points of the triangle
@@ -54,7 +50,7 @@ public class Question_3 extends Application {
         c.endXProperty().bind(points[1].centerXProperty());
         c.endYProperty().bind(points[1].centerYProperty());
 
-        //Labels for the angles (set initial values)
+        //Labels for the angles
         Label A = new Label(String.valueOf(toDegrees((Math.acos((aLen*aLen-bLen*bLen-cLen*cLen)/(-2*bLen*cLen))))));
         A.translateXProperty().bind(points[0].centerXProperty());
         A.translateYProperty().bind(points[0].centerYProperty());
@@ -82,7 +78,7 @@ public class Question_3 extends Application {
                 //Determine angle
                 double theta = (Math.atan((e.getY()-200)/(e.getX()-200)));
 
-                //Position the point on the circle
+                //Position the point on the circumference of the circle
                 if(e.getX() < 200) {
                     temp.setCenterX(-(100*Math.cos(theta))+200);
                     temp.setCenterY(-(100*Math.sin(theta))+200);
@@ -92,7 +88,7 @@ public class Question_3 extends Application {
                     temp.setCenterY(100*Math.sin(theta)+200);
                 }
 
-                //Calculate the angles of the triangle
+                //Calculate the angles of the triangle using provided cosine law
                 double lenA = lineLength(a);
                 double lenB = lineLength(b);
                 double lenC = lineLength(c);
@@ -113,10 +109,11 @@ public class Question_3 extends Application {
         Scene scene = new Scene(root,400,400);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Question_3");
+        primaryStage.setResizable(false);
         primaryStage.show();
     }
 
-    //Converts radians into degrees
+    //Converts radians into degrees (rounds to nearest degree)
     public int toDegrees(double radians) {
         return (int)(radians*(180/Math.PI));
     }

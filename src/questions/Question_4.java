@@ -1,7 +1,6 @@
 package questions;
 
 import javafx.application.Application;
-import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.chart.BarChart;
 import javafx.scene.chart.CategoryAxis;
@@ -10,7 +9,6 @@ import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
@@ -23,20 +21,13 @@ public class Question_4 extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
         GridPane mainPane = new GridPane();
-        mainPane.setMaxSize(430,215);
+        mainPane.setMaxSize(450,215);
 
         //Bar chart components
         final CategoryAxis xAxis = new CategoryAxis();
         final NumberAxis yAxis = new NumberAxis();
         final BarChart<String,Number> histogram = new BarChart<String,Number>(xAxis,yAxis);
         histogram.setLegendVisible(false);
-        /*
-        XYChart.Series countSeries = new XYChart.Series();
-        for(int i = 0; i < 26; i++) {
-            countSeries.getData().add(new XYChart.Data(String.valueOf((char)(i+65)),counts[i]));
-        }
-        histogram.getData().add(countSeries);
-        */
         updateData(histogram);
 
         //User input components
@@ -46,6 +37,7 @@ public class Question_4 extends Application {
         textfield.setMinWidth(340);
         Button viewButton = new Button("View");
 
+        //Set button to count the letters in the specified file when pressed
         viewButton.setOnAction(actionEvent -> {
             //Open the specified file
             try {
@@ -91,9 +83,7 @@ public class Question_4 extends Application {
         XYChart.Series countSeries = new XYChart.Series();
         for(int i = 0; i < 26; i++) {
             countSeries.getData().add(new XYChart.Data(String.valueOf((char)(i+65)),counts[i]));
-            System.out.print(counts[i]+" "); //delete
         }
-        System.out.print("\n"); //delete
         chart.getData().add(countSeries);
 
         for(int i = 0; i < 26; i++) { //reset counts of each character after plotting
@@ -101,7 +91,5 @@ public class Question_4 extends Application {
         }
     }
 
-    public static void main(String[] args) {
-        launch(args);
-    }
+    public static void main(String[] args) { launch(args); }
 }
