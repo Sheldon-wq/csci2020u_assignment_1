@@ -1,4 +1,4 @@
 How to run:
--Clone the entire git repository to your computer
--Open the repository using IntelliJ
--Each question can be built and run through IntelliJ
+-Clone or download the entire git repository to your computer
+-Open the project folder in IntelliJ
+-Each question can be built and run using IntelliJ
