@@ -61,7 +61,7 @@ public class Question_4 extends Application {
                 updateData(histogram);
             }
             catch(Exception e) {
-                e.printStackTrace();
+                System.out.println("Error: file not found");
             }
         });
 
