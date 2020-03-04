@@ -77,7 +77,10 @@ public class Question_4 extends Application {
         primaryStage.show();
     }
 
-    //Updates the data displayed on the bar chart
+    /**
+     * Updates the data displayed on the bar chart
+     * @param chart: the chart whose data is being updated
+     */
     public void updateData(BarChart chart) {
         chart.getData().clear();
         XYChart.Series countSeries = new XYChart.Series();

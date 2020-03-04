@@ -113,12 +113,20 @@ public class Question_3 extends Application {
         primaryStage.show();
     }
 
-    //Converts radians into degrees (rounds to nearest degree)
+    /**
+     * Converts an angle measurement from radians to degrees, rounding to the nearest degree
+     * @param radians: the angle measurement in radians
+     * @return the angle measurement in degrees, rounded to the nearest degree
+     */
     public int toDegrees(double radians) {
         return (int)(radians*(180/Math.PI));
     }
 
-    //Calculates the length of a line segment
+    /**
+     * Calculates the length of a line segment
+     * @param line: the line whose length is being calculated
+     * @return the length of the line segment
+     */
     public double lineLength(Line line) {
         return Math.sqrt(Math.pow(line.getEndX()-line.getStartX(),2)+Math.pow(line.getEndY()-line.getStartY(),2));
     }
