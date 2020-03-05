@@ -9,6 +9,7 @@ import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
@@ -33,36 +34,23 @@ public class Question_4 extends Application {
         //User input components
         HBox textPane = new HBox();
         Label filename = new Label("Filename");
+
         TextField textfield = new TextField();
         textfield.setMinWidth(340);
-        Button viewButton = new Button("View");
+
+        //Allow user to press the enter key to open and read from the file
+        textfield.setOnKeyPressed(e -> {
+            if(e.getCode() == KeyCode.ENTER) {
+                //Open specified file
+                openFile(histogram,textfield);
+            }
+        });
 
         //Set button to count the letters in the specified file when pressed
+        Button viewButton = new Button("View");
         viewButton.setOnAction(actionEvent -> {
             //Open the specified file
-            try {
-                File file = new File(textfield.getText());
-                Scanner input = new Scanner(file);
-                while(input.hasNextLine()) {
-                    String line = input.nextLine();
-                    for(int i = 0; i < line.length(); i++) { //Check each character in the line
-                        char letter = line.charAt(i);
-                        int ascii = (int)letter;
-                        if((ascii < 92) && (ascii > 64)) { //Count upper case letters
-                            ascii -= 65;
-                            counts[ascii]++;
-                        }
-                        else if((ascii > 96) && (ascii < 123)) { //Count lower case letters
-                            ascii -= 97;
-                            counts[ascii]++;
-                        }
-                    }
-                }
-                updateData(histogram);
-            }
-            catch(Exception e) {
-                System.out.println("Error: file not found");
-            }
+            openFile(histogram,textfield);
         });
 
         textPane.getChildren().addAll(filename,textfield,viewButton);
@@ -91,6 +79,37 @@ public class Question_4 extends Application {
 
         for(int i = 0; i < 26; i++) { //reset counts of each character after plotting
             counts[i] = 0;
+        }
+    }
+
+    /**
+     * Opens a file and counts the number of times each letter in the alphabet appears in the file
+     * @param chart: the chart being used to display letter counts
+     * @param text: text field containing the absolute path to the file
+     */
+    public void openFile(BarChart chart, TextField text) {
+        try {
+            File file = new File(text.getText());
+            Scanner input = new Scanner(file);
+            while(input.hasNextLine()) {
+                String line = input.nextLine();
+                for(int i = 0; i < line.length(); i++) { //Check each character in the line
+                    char letter = line.charAt(i);
+                    int ascii = (int)letter;
+                    if((ascii < 92) && (ascii > 64)) { //Count upper case letters
+                        ascii -= 65;
+                        counts[ascii]++;
+                    }
+                    else if((ascii > 96) && (ascii < 123)) { //Count lower case letters
+                        ascii -= 97;
+                        counts[ascii]++;
+                    }
+                }
+            }
+            updateData(chart);
+        }
+        catch(Exception e) {
+            System.out.println("Error: file not found");
         }
     }
 
